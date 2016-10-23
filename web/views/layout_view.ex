@@ -2,6 +2,6 @@ defmodule ModestGreeter.LayoutView do
   use ModestGreeter.Web, :view
 
   def document_title(assigns) do
-    "SimpleGreeter (#{assigns.name})"
+    apply(assigns.view_module, :document_title, [assigns])
   end
 end

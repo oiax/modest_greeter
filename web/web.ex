@@ -44,6 +44,12 @@ defmodule ModestGreeter.Web do
       import ModestGreeter.Router.Helpers
       import ModestGreeter.ErrorHelpers
       import ModestGreeter.Gettext
+
+      def document_title(_assigns) do
+        "SimpleGreeter"
+      end
+
+      defoverridable [document_title: 1]
     end
   end
 
