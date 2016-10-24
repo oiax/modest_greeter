@@ -1,1 +1,5 @@
-<p>Hello, <%= @name %>!</p>
+<div class="card m-1">
+  <div class="card-block card-inverse card-success">
+    <p class="card-text">Hello, <%= @name %>!</p>
+  </div>
+</div>
