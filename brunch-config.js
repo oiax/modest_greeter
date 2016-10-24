@@ -64,6 +64,14 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+      bootstrap: ["dist/css/bootstrap.css"]
+    },
+    globals: {
+      $: "jquery",
+      jQuery: "jquery",
+      Tether: "tether"
+    }
   }
 };
