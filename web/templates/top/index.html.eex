@@ -1,3 +1,6 @@
+<%
+  names = ~w(Alice Bob Charlie)
+%>
 <div class="jumbotron m-1">
   <h1 class="display-3">ModestGreeter</h1>
   <p class="lead">ModestGreeter へようこそ！</p>
@@ -5,7 +8,7 @@
   <p><%= link "このサイトについて", to: top_path(@conn, :about) %></p>
 </div>
 <nav class="nav nav-inline mb-1">
-  <%= link "Alice", to: hello_path(@conn, :show, "Alice"), class: "nav-link" %>
-  <%= link "Bob", to: hello_path(@conn, :show, "Bob"), class: "nav-link" %>
-  <%= link "Charlie", to: hello_path(@conn, :show, "Charlie"), class: "nav-link" %>
+  <%= for name <- names do %>
+    <%= link name, to: hello_path(@conn, :show, name), class: "nav-link" %>
+  <% end %>
 </nav>
