@@ -4,3 +4,8 @@
   <hr>
   <p><%= link "このサイトについて", to: top_path(@conn, :about) %></p>
 </div>
+<nav class="nav nav-inline mb-1">
+  <%= link "Alice", to: hello_path(@conn, :show, "Alice"), class: "nav-link" %>
+  <%= link "Bob", to: hello_path(@conn, :show, "Bob"), class: "nav-link" %>
+  <%= link "Charlie", to: hello_path(@conn, :show, "Charlie"), class: "nav-link" %>
+</nav>
