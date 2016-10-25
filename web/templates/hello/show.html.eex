@@ -1,4 +1,6 @@
 <div class="card m-1">
+  <%= tag :img, src: static_path(@conn, "/images/robot.svg"),
+    alt: "Robot", style: "width: 100%; max-width: 320px" %>
   <div class="card-block card-inverse card-success">
     <p class="card-text">
       <i class="fa fa-smile-o"></i>

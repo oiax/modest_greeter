@@ -9,6 +9,10 @@
 
     <title><%= @view_module.document_title assigns %></title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="shortcut icon" type="image/x-icon"
+      href="<%= static_path(@conn, "/modest_greeter.ico") %>">
+    <link rel="apple-touch-icon" type="image/x-icon"
+      href="<%= static_path(@conn, "/robot256.png") %>">
   </head>
 
   <body>
