@@ -1,4 +1,6 @@
 <div class="jumbotron m-1">
   <h1 class="display-3">ModestGreeter</h1>
   <p class="lead">ModestGreeter へようこそ！</p>
+  <hr>
+  <p><%= link "このサイトについて", to: "/about" %></p>
 </div>
