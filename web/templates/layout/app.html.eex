@@ -8,11 +8,12 @@
     <meta name="author" content="">
 
     <title><%= @view_module.document_title assigns %></title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-    <link rel="shortcut icon" type="image/x-icon"
-      href="<%= static_path(@conn, "/modest_greeter.ico") %>">
-    <link rel="apple-touch-icon" type="image/x-icon"
-      href="<%= static_path(@conn, "/robot256.png") %>">
+    <%= tag :link, rel: "stylesheet",
+      href: static_path(@conn, "/css/app.css") %>
+    <%= tag :link, rel: "shortcut icon", type: "image/x-icon",
+      href: static_path(@conn, "/modest_greeter.ico") %>
+    <%= tag :link, rel: "apple-touch-icon", type: "image/x-icon",
+      href: static_path(@conn, "/robot256.png") %>
   </head>
 
   <body>
@@ -25,6 +26,6 @@
     <footer>
       &copy; 2016 Oiax Inc.
     </footer>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <%= content_tag :script, "", src: static_path(@conn, "/js/app.js") %>
   </body>
 </html>
