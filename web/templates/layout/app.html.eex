@@ -12,7 +12,15 @@
   </head>
 
   <body>
-    <%= render @view_module, @view_template, assigns %>
+    <header>
+      <h1>ModestGreeter</h1>
+    </header>
+    <main>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <footer>
+      &copy; 2016 Oiax Inc.
+    </footer>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
