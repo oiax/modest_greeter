@@ -3,10 +3,8 @@ defmodule ModestGreeter.TopView do
 
   def document_title(assigns) do
     case assigns.view_template do
-      "about.html" ->
-        "ModestGreeter - このサイトについて"
-      _ ->
-        "ModestGreeter"
+      "about.html" -> "ModestGreeter - このサイトについて"
+      _ -> "ModestGreeter"
     end
   end
 end
