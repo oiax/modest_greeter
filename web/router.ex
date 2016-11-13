@@ -14,6 +14,7 @@ defmodule ModestGreeter.Router do
 
     get "/", TopController, :index
     get "/about", TopController, :about
+    get "/hello", HelloController, :show
     get "/hello/:name", HelloController, :show
   end
 end

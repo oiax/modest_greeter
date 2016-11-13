@@ -9,6 +9,7 @@
 </div>
 <nav class="nav nav-inline mb-1">
   <%= for name <- names do %>
-    <%= link name, to: hello_path(@conn, :show, name), class: "nav-link" %>
+    <%= link name, to: hello_path(@conn, :show, name, []),
+      class: "nav-link" %>
   <% end %>
 </nav>
