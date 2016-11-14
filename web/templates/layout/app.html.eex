@@ -11,9 +11,9 @@
     <%= tag :link, rel: "stylesheet",
       href: static_path(@conn, "/css/app.css") %>
     <%= tag :link, rel: "shortcut icon", type: "image/x-icon",
-      href: static_path(@conn, "/modest_greeter.ico") %>
+      href: static_path(@conn, "/images/modest_greeter.ico") %>
     <%= tag :link, rel: "apple-touch-icon", type: "image/x-icon",
-      href: static_path(@conn, "/robot256.png") %>
+      href: static_path(@conn, "/images/robot256.png") %>
   </head>
 
   <body>
