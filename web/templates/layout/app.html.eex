@@ -13,7 +13,7 @@
     <%= tag :link, rel: "shortcut icon", type: "image/x-icon",
       href: static_path(@conn, "/images/modest_greeter.ico") %>
     <%= tag :link, rel: "apple-touch-icon", type: "image/x-icon",
-      href: static_path(@conn, "/images/robot256.png") %>
+      href: static_path(@conn, "/images/modest_greeter256.png") %>
   </head>
 
   <body>
