@@ -1,6 +1,7 @@
-<div class="card m-3">
+<div class="card text-white bg-success m-3">
   <div class="card-body">
     <p class="card-text lead">
+      <i class="fa fa-smile-o"></i>
       Hello, <%= @name %>!
     </p>
   </div>
