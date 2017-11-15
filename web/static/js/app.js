@@ -20,3 +20,6 @@ import "bootstrap"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
