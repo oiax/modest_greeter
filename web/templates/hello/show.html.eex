@@ -1,1 +1,5 @@
-<p>Hello, <%= @name %>!</p>
+<div class="card text-white bg-success m-3">
+  <div class="card-body">
+    <p class="card-text lead">Hello, <%= @name %>!</p>
+  </div>
+</div>
