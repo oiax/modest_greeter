@@ -1,19 +1,43 @@
 # ModestGreeter
 
-To start your Phoenix server:
+これは『Elixir/Phoenix初級①（第3版）』の学習用 Phoenix アプリケーションです。
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+## 稼働条件
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+* Docker 18 以上
+* Docker Compose 1.24 以上
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## コンテナの構築
 
-## Learn more
+```text
+% git clone -b no-ecto https://github.com/oiax/phx-compose.git ex-v01
+% cd ex-v01
+% bin/setup.sh
+```
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+## コンテナの起動
+
+```text
+% bin/start.sh
+```
+
+## アプリケーションのインストール
+
+```text
+% bin/login.sh
+$ git clone -b master3 https://github.com/oiax/modest_greeter.git
+$ cd modest_greeter
+$ mix deps.get
+$ mix deps.compile
+$ cd assets; npm i; cd ..
+```
+
+## アプリケーションの起動
+
+```text
+$ mix phx.server
+```
+
+## 動作確認
+
+ブラウザで http://localhost:4000 を開いてください。
