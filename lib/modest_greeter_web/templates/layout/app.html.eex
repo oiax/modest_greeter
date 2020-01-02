@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ModestGreeter (<%= @name %>)</title>
     <link rel="stylesheet"
-      href="<%= Routes.static_path(@conn, "/css/app.css") %>"/> 
+      href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
     <header>
@@ -18,5 +18,7 @@
     <footer>
       &copy; 2019 Oiax Inc.
     </footer>
+    <script type="text/javascript"
+      src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script> 
   </body>
 </html>
