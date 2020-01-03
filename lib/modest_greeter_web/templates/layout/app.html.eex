@@ -10,7 +10,8 @@
   </head>
   <body>
     <header>
-      <h1>ModestGreeter</h1>
+      <h1><%= link "ModestGreeter",
+        to: Routes.top_path(@conn, :index, []) %></h1>
     </header>
     <main>
       <%= render @view_module, @view_template, assigns %>
