@@ -23,7 +23,7 @@
     "file-loader": "^5.0.2",
     "import-glob-loader": "^1.1.0",
     "mini-css-extract-plugin": "^0.4.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.0",
     "terser-webpack-plugin": "^1.1.0",
