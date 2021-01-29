@@ -13,5 +13,6 @@ defmodule ModestGreeterWeb.Router do
     pipe_through :browser
 
     get "/hello", HelloController, :show
+    get "/hello/:name", HelloController, :show
   end
 end
