@@ -1,4 +1,8 @@
 <div class="card m-3">
+  <%= tag :img,
+    src: Routes.static_path(@conn, "/images/modest_greeter.svg"),
+    alt: "Robot", style: "width: 100%; max-width: 375px",
+    class: "card-image-home mx-auto" %>
   <div class="card-body text-white bg-success">
     <p class="card-text lead">
       <i class="far fa-smile"></i>
