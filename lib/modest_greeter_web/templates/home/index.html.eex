@@ -1,4 +1,16 @@
+<%
+  names = ~w(Alice Bob Charlie)
+%>
 <div class="jumbotron m-3">
   <h1 class="display-3"><%= document_title(assigns) %></h1>
   <p class="lead">ModestGreeter へようこそ！</p>
+  <hr>
+  <p><%= link "このサイトについて",
+    to: Routes.home_path(@conn, :about, []) %></p>
 </div>
+<nav class="nav justify-content-center mb-3">
+  <%= for name <- names do %>
+    <%= link name, to: Routes.hello_path(@conn, :show, name, []),
+      class: "nav-link" %>
+  <% end %>
+</nav>
