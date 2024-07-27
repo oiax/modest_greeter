@@ -12,5 +12,7 @@ defmodule ModestGreeterWeb.Router do
 
   scope "/", ModestGreeterWeb do
     pipe_through :browser
+
+    live "/", HomeLive
   end
 end
